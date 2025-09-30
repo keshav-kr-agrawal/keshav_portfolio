@@ -542,6 +542,7 @@ aside li i {
 .contactMe form input:focus {
     border: 1px solid #85f69f;
     outline: none;
+    background-color: #212529;
 }
 .contactMe form textarea {
     width: calc(100% - 40px);
@@ -557,7 +558,9 @@ aside li i {
     background-color:#212529;
 }
 .contactMe form textarea:focus {
-    border: 1px solid 85f69f !important;
+    border: 1px solid #85f69f !important;
+    outline: none;
+    background-color: #212529 !important;
 }
 .contactMe button{
     grid-column: 1/span 2;
@@ -576,6 +579,138 @@ footer {
 
 footer li{
     padding:10px;
+}
+
+/* ===== Offers Section ===== */
+.offers-section {
+    padding: 30px 0;
+    margin: 40px 0;
+}
+
+.offers-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+}
+
+.offer-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 30px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.36);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.offer-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(107, 231, 102, 0.3);
+}
+
+.offer-card h3 {
+    color: #6be766;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.offer-description {
+    color: #e0e0e0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    flex-grow: 1;
+}
+
+.view-offer {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #6be766;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px 20px;
+    background: rgba(107, 231, 102, 0.1);
+    border: 1px solid rgba(107, 231, 102, 0.3);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    margin-top: auto;
+    width: fit-content;
+}
+
+.view-offer:hover {
+    background: rgba(107, 231, 102, 0.2);
+    transform: translateX(5px);
+}
+
+.view-offer i {
+    font-size: 0.8rem;
+    transition: transform 0.3s ease;
+}
+
+.view-offer:hover i {
+    transform: translateX(3px);
+}
+
+.section-title {
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 0;
+    background: transparent;
+    border-radius: 2px;
+}
+
+.section-title i {
+    color: #6be766;
+    font-size: 1.8rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .offers-container {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 900px;
+    }
+}
+
+@media (max-width: 768px) {
+    .offers-container {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .offer-card {
+        padding: 25px;
+    }
 }
 form h2 .SocialLinks{
     padding:5px;
@@ -601,10 +736,26 @@ form h2.SocialLinks i{
 .scrollable-container {
     overflow-y: auto;
     height: 100vh;
-    padding: 50px;
+    padding: 30px 50px;
     flex: 1;
     scrollbar-width: thin;
     scrollbar-color: #80ed99 #343a40;
+}
+
+/* Add specific spacing for content after heading */
+.achievements-content,
+.projects-content,
+.education-content,
+.certifications-content {
+    margin-top: 20px;
+}
+
+/* Ensure consistent heading spacing */
+.achievements-container .heading,
+.projects-container .heading,
+.education-container .heading,
+.certifications-container .heading {
+    margin-bottom: 20px;
 }
 
 .scrollable-container::-webkit-scrollbar {
@@ -1560,31 +1711,19 @@ main {
     transform: scaleX(1);
 }
 
-/* Enhanced heading hover effects */
+/* Heading styles */
 .heading {
     position: relative;
-    transition: all 0.3s ease;
+    transition: color 0.3s ease;
 }
 
 .heading:hover {
     color: rgb(107, 231, 102);
-    transform: translateY(-2px);
 }
 
+/* Remove the line effect completely */
 .heading::after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 50%;
-    width: 0;
-    height: 2px;
-    background: rgb(107, 231, 102);
-    transform: translateX(-50%);
-    transition: width 0.3s ease;
-}
-
-.heading:hover::after {
-    width: 100%;
+    display: none;
 }
 
 /* Active state animations */
@@ -1792,7 +1931,6 @@ html {
     color: #ffffff;
     transform: translateY(-5px);
 }
-
 /* Animations */
 .contact-card {
     animation: fadeIn 0.5s ease-out;
@@ -2421,8 +2559,8 @@ html {
     }
 }
 
-/* For Mobile Devices (<= 768px) */
-@media (max-width: 768px) {
+/* For Mobile Devices (<= 1024px) */
+@media (max-width: 1024px) {
     .mySwiper, .about-us, .scrollable-container, .projects-container, .education-container, .contact-container, .certifications-container {
         padding: 70px 20px 30px;
         height: 100%;
@@ -2511,6 +2649,84 @@ html {
 }
 
 /* For Small Mobile Devices (<= 480px) */
+/* Index Page Responsive Styles */
+@media (max-width: 1200px) {
+
+    .HomeContent {
+        padding: 40px 0; /* Add some vertical padding */
+    }
+
+    .HomeContent h1 { font-size: 2.5rem; }
+    .HomeContent h2 { font-size: 1.8rem; }
+    .HomeContent .heroline { font-size: 1.1rem; }
+
+    .SideImg {
+        width: 60%;
+        max-width: 300px;
+    }
+
+    .swiper {
+        width: 95%;
+    }
+    
+    .about-me-divison {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .about-me-table, .skill-bar {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .swiper-slide {
+        padding: 40px 20px;
+    }
+    
+    .about-me-table {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    aside {
+        transform: translateX(-100%);
+        width: 280px;
+    }
+    
+    aside.active {
+        transform: translateX(0);
+    }
+    
+    .hamburger-menu {
+        display: flex;
+    }
+    
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none;
+    }
+    
+    .about-me-table .buttonGroup {
+        grid-column: 1;
+    }
+}
+
+@media (max-width: 576px) {
+    .swiper-slide {
+        padding: 30px 15px;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .aboutme-deatils {
+        padding: 20px;
+    }
+}
+
 @media (max-width: 480px) {
     aside {
         width: calc(100% - 60px);

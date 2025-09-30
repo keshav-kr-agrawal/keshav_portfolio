@@ -1,30 +1,46 @@
 // 3D Dynamic Loader JavaScript
 document.addEventListener('DOMContentLoaded', function() {
     const loaderOverlay = document.getElementById('loader-overlay');
-    const isFullLoaderPage = document.getElementById('progress-text') !== null;
-
-    // If this page doesn't have the full loader content, hide overlay and stop.
-    if (!isFullLoaderPage) {
-        if (loaderOverlay) {
-            loaderOverlay.style.display = 'none';
-        }
+    if (!loaderOverlay) return;
+    
+    // Only show loader on the home page
+    const isHomePage = window.location.pathname.endsWith('index.html') || 
+                      window.location.pathname.endsWith('/') || 
+                      window.location.pathname === '';
+    
+    if (!isHomePage) {
+        loaderOverlay.style.display = 'none';
+        loaderOverlay.style.visibility = 'hidden';
         return;
     }
-
-    // Use sessionStorage to ensure the loader runs only once per session, or on reload.
-    const hasVisited = sessionStorage.getItem('hasVisitedDuringSession');
     
-    const navigationEntries = performance.getEntriesByType("navigation");
-    const navType = navigationEntries.length > 0 ? navigationEntries[0].type : 'navigate';
+    // Check if this is a page refresh or first visit
+    const navigationEntries = performance.getEntriesByType('navigation');
+    const isPageRefresh = navigationEntries.length > 0 && 
+                         (navigationEntries[0].type === 'reload' || 
+                          navigationEntries[0].type === 'back_forward');
     
-    // Show loader ONLY on first visit in a session OR on explicit reload.
-    if (navType === 'reload' || !hasVisited) {
+    // Check if we've shown the loader in this session
+    const hasShownLoader = sessionStorage.getItem('hasShownLoader');
+    
+    if (isPageRefresh || !hasShownLoader) {
+        // Show loader
         loaderOverlay.style.display = 'flex';
-        sessionStorage.setItem('hasVisitedDuringSession', 'true');
+        loaderOverlay.style.visibility = 'visible';
+        document.body.style.overflow = 'hidden';
+        sessionStorage.setItem('hasShownLoader', 'true');
+        
+        // Hide loader after animation completes
+        setTimeout(() => {
+            loaderOverlay.style.display = 'none';
+            loaderOverlay.style.visibility = 'hidden';
+            document.body.style.overflow = 'auto';
+        }, 4000); // Match this with your animation duration
     } else {
-        // For all other cases (like navigating between pages), hide it.
+        // Hide loader if navigating between pages
         loaderOverlay.style.display = 'none';
-        return;
+        loaderOverlay.style.visibility = 'hidden';
+        document.body.style.overflow = 'auto';
     }
 
     const progressCircle = document.querySelector('.progress-ring-circle');
@@ -38,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
     progressCircle.style.strokeDasharray = `${circumference} ${circumference}`;
     progressCircle.style.strokeDashoffset = circumference;
 
-    const counterTargets = { hackathon: 2, project: 7, dsa: 250, research: 1 };
+    const counterTargets = { hackathon: 2, project: 7, dsa: 250, research: 0 };
     const loaderDuration = 4000; // 4 seconds total
 
     function animateCounter(element, target, duration) {

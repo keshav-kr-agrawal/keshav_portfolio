@@ -187,8 +187,14 @@ aside li i {
 }
 .buttonGroup {
     display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
     padding: 10px 0px;
     margin-top: 10px;
+}
+.resume-download-link {
+    text-decoration: none;
+    display: inline-block;
 }
 .buttonGroup button.primary{
     padding: 10px 20px;
@@ -754,7 +760,8 @@ form h2.SocialLinks i{
 .achievements-container .heading,
 .projects-container .heading,
 .education-container .heading,
-.certifications-container .heading {
+.certifications-container .heading,
+.startups-container .heading {
     margin-bottom: 20px;
 }
 
@@ -2540,7 +2547,7 @@ html {
     .hamburger-menu {
         display: flex !important;
     }
-    .mySwiper, .about-us, .scrollable-container, .projects-container, .education-container, .contact-container, .certifications-container {
+    .mySwiper, .about-us, .scrollable-container, .projects-container, .education-container, .contact-container, .certifications-container, .startups-container {
         width: 100%;
         padding: 80px 40px 40px;
     }
@@ -2561,7 +2568,7 @@ html {
 
 /* For Mobile Devices (<= 1024px) */
 @media (max-width: 1024px) {
-    .mySwiper, .about-us, .scrollable-container, .projects-container, .education-container, .contact-container, .certifications-container {
+    .mySwiper, .about-us, .scrollable-container, .projects-container, .education-container, .contact-container, .certifications-container, .startups-container {
         padding: 70px 20px 30px;
         height: 100%;
         overflow-y: auto;
@@ -2599,9 +2606,15 @@ html {
         gap: 15px;
     }
 
-    .buttonGroup button.primary {
+    .buttonGroup button.primary,
+    .buttonGroup .resume-download-link {
         width: 90%;
         max-width: 320px;
+    }
+
+    .buttonGroup .resume-download-link button.primary {
+        width: 100%;
+        margin: 0;
     }
 
     .about-me-divison, .about-content, .contact-content {
@@ -2710,6 +2723,15 @@ html {
     
     .about-me-table .buttonGroup {
         grid-column: 1;
+    }
+
+    .about-me-table .buttonGroup .resume-download-link {
+        width: 100%;
+        max-width: none;
+    }
+
+    .about-me-table .buttonGroup .resume-download-link button.primary {
+        width: 100%;
     }
 }
 

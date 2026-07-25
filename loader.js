@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
     progressCircle.style.strokeDasharray = `${circumference} ${circumference}`;
     progressCircle.style.strokeDashoffset = circumference;
 
-    const counterTargets = { hackathon: 2, project: 7, dsa: 250, research: 0 };
+    const counterTargets = { hackathon: 15, project: 10, dsa: 300, research: 1 };
     const loaderDuration = 4000; // 4 seconds total
 
     function animateCounter(element, target, duration) {

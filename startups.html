@@ -10,15 +10,41 @@
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
     <script defer src="main.js"></script>
     <script defer src="loader.js"></script>
-    <title>Startups | Keshav Kumar Agrawal</title>
+    <title>Startups & Ventures | Keshav Kumar Agrawal</title>
     <style>
         .sidebar-logo:hover {
             transform: rotatey(360deg);
             transition: all 2s ease-in-out;
         }
+        .startup-badge {
+            display: inline-block;
+            background: rgba(136, 237, 153, 0.15);
+            color: #88ed99;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+            border: 1px solid rgba(136, 237, 153, 0.3);
+        }
+        .tech-stack-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 15px;
+        }
+        .tech-pill {
+            background: #2b3035;
+            color: #d0d7de;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-family: monospace;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -44,32 +70,72 @@
                 <li><a href="achievements.html">Achievements</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="certifications.html">Certifications</a></li>
+                <li><a href="startups.html">Startups</a></li>
                 <li><a href="contact.html">Contact me</a></li>
             </ul>
-            
         </aside>
+
         <div class="scrollable-container startups-container">
-            <h1 class="heading">Startups</h1>
-            
+            <div class="page-inner">
+                <h1 class="heading">Startups & Product Ecosystem</h1>
+                <p class="page-subtitle">Building real-world software products, autonomous agent systems, edge computing, and AR/VR solutions.</p>
+                
+                <div class="content-card-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(480px, 1fr)); gap: 28px;">
             <div class="content-card">
-                <h3 class="content-title">Hikat</h3>
+                <div class="card-placeholder-banner">
+                    <i class="fas fa-rocket"></i>
+                    <span>Hikat Ecosystem • hikat.xyz</span>
+                </div>
+                <span class="startup-badge"><i class="fas fa-layer-group"></i> Ecosystem Base & Venture • Founder & Tech Lead</span>
+                <h3 class="content-title">Hikat (<a href="https://hikat.xyz" target="_blank" style="color:#88ed99;">hikat.xyz</a>)</h3>
                 <p class="content-description">
-                    We create innovative tools and ecosystems that empower businesses to scale and also provide the solution to real world problems. Explore our suite of major products below.
+                    Hikat is the broader software and product-building ecosystem behind major digital technologies. We build edge solutions, high-performance digital software for B2B, B2C, D2C, and B2G domains, while actively pushing boundaries in AR-VR technology and intelligent software systems.
                 </p>
                 <ul class="feature-list">
-                    <li>Innovative business scaling tools</li>
-                    <li>Real-world problem solutions</li>
-                    <li>Comprehensive product ecosystem</li>
+                    <li><strong>Edge & AI Solutions:</strong> Deploying localized agentic AI workflows and spatial computing interfaces</li>
+                    <li><strong>AR/VR Technology:</strong> Developing immersive next-gen human-computer interaction models</li>
+                    <li><strong>Enterprise Digital Infrastructure:</strong> Building high-scale solutions across B2B, B2C, D2C, and Government (B2G) sectors</li>
+                    <li><strong>Product Ecosystem:</strong> Housing flagship platforms like Sparsh Mukthi, Hikity Sales Agent, and Navi Meet</li>
                 </ul>
-                <div class="buttonGroup">
-                    <button class="primary" onclick="window.open('https://hikat.xyz', '_blank')">Visit Website</button>
+                <div class="tech-stack-container">
+                    <span class="tech-pill">Edge Solutions</span>
+                    <span class="tech-pill">AR/VR Tech</span>
+                    <span class="tech-pill">B2B / B2C / D2C / B2G</span>
+                    <span class="tech-pill">AI Agents</span>
+                    <span class="tech-pill">Spatial Computing</span>
+                </div>
+                <div class="buttonGroup" style="margin-top: 18px;">
+                    <button class="primary" onclick="window.open('https://hikat.xyz', '_blank')">Visit hikat.xyz <i class="fas fa-external-link-alt"></i></button>
                 </div>
             </div>
 
+            <!-- HIKITY -->
+            <div class="content-card" style="margin-top: 25px;">
+                <div class="card-placeholder-banner">
+                    <i class="fas fa-robot"></i>
+                    <span>Hikity • AI Sales Automation</span>
+                </div>
+                <span class="startup-badge"><i class="fas fa-robot"></i> AI Sales & Automation Venture</span>
+                <h3 class="content-title">Hikity</h3>
+                <p class="content-description">
+                    A digital solutions venture specializing in autonomous AI sales agents, automated client onboarding workflows, lead qualification engines, and bespoke business automation.
+                </p>
+                <ul class="feature-list">
+                    <li>Autonomous lead scraping, tracking, and outbound qualification pipeline</li>
+                    <li>Context-aware AI sales conversation agents operating in authentic brand voices</li>
+                    <li>Automated meeting scheduling & real-time client management tools</li>
+                </ul>
+                <div class="tech-stack-container">
+                    <span class="tech-pill">Autonomous Sales Agents</span>
+                    <span class="tech-pill">Lead Automation</span>
+                    <span class="tech-pill">Workflow Logic</span>
+                    <span class="tech-pill">Supabase</span>
+                    <span class="tech-pill">Python & AI</span>
+                </div>
+                </div>
+            </div>
         </div>
     </main>
-
 </body>
-
 </html></content>
 <parameter name="filePath">/Users/keshav/PORTFOLIO1/startups.html

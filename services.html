@@ -18,7 +18,7 @@
         }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -44,48 +44,55 @@
                 <li><a href="achievements.html">Achievements</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="certifications.html">Certifications</a></li>
+                <li><a href="startups.html">Startups</a></li>
                 <li><a href="contact.html">Contact me</a></li>
             </ul>
-            
         </aside>
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide services">
-                    <h1 class="heading">Services</h1>
-                    <div class="service">
-                        <div class="service-icon"><i class="fab fa-python"></i></div>
-                        <h2>Python Development</h2>
-                        <p>AI/ML, OpenCV, TensorFlow, File handling, OOP</p>
-                    </div>
-                    <div class="service">
-                        <div class="service-icon"><i class="fab fa-java"></i></div>
-                        <h2>UI/UX</h2>
-                        <p>Designing</p>
-                    </div>
-                        <div class="service">
-                        <div class="service-icon"><i class="fas fa-code"></i></div>
-                        <h2>Java Programming</h2>
-                        <p>System programming, Data structures, Algorithms</p>
-                    </div>
-                    <div class="service">
-                        <div class="service-icon"><i class="fab fa-react"></i></div>
-                        <h2>MERN Stack</h2>
-                        <p>MongoDB, Express, React, Node.js development, AI tools</p>
-                    </div>
-                    <div class="service">
-                        <div class="service-icon"><i class="fas fa-robot"></i></div>
-                        <h2>AI/ML Solutions</h2>
-                        <p>Voice & gesture-controlled automation, Computer Vision</p>
-                    </div>
-                    <div class="service">
-                        <div class="service-icon"><i class="fas fa-brain"></i></div>
-                        <h2>API Integration</h2>
-                        <p>Web APIs, OpenAI API, PyAutoGUI, Shell scripting</p>
-                    </div>
+
+        <div class="scrollable-container services-container">
+            <div class="page-inner">
+                <h1 class="heading">Services & Capabilities</h1>
+                <p class="page-subtitle">Engineering end-to-end software, autonomous AI systems, and enterprise digital solutions.</p>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px;">
+                <div class="service" style="background:#1a1a1a; padding:25px; border-radius:12px; border:1px solid rgba(136,237,153,0.2);">
+                    <div class="service-icon" style="font-size:2rem; color:#88ed99; margin-bottom:12px;"><i class="fas fa-robot"></i></div>
+                    <h2 style="font-size:1.3rem; margin-bottom:8px; color:#ffffff;">Autonomous AI Agents</h2>
+                    <p style="color:#aaaaaa; font-size:0.95rem; line-height:1.5;">Building context-aware AI sales agents, automated lead qualification, meeting scheduling, and customized workflow automation engines using Grok API, Anakin AI, and Python.</p>
+                </div>
+
+                <div class="service" style="background:#1a1a1a; padding:25px; border-radius:12px; border:1px solid rgba(136,237,153,0.2);">
+                    <div class="service-icon" style="font-size:2rem; color:#88ed99; margin-bottom:12px;"><i class="fas fa-laptop-code"></i></div>
+                    <h2 style="font-size:1.3rem; margin-bottom:8px; color:#ffffff;">Full-Stack Web Systems</h2>
+                    <p style="color:#aaaaaa; font-size:0.95rem; line-height:1.5;">Engineering modern, responsive web applications and scalable cloud backends with JavaScript, Supabase, Firebase, MongoDB, PostgreSQL, and Node.js.</p>
+                </div>
+
+                <div class="service" style="background:#1a1a1a; padding:25px; border-radius:12px; border:1px solid rgba(136,237,153,0.2);">
+                    <div class="service-icon" style="font-size:2rem; color:#88ed99; margin-bottom:12px;"><i class="fas fa-eye"></i></div>
+                    <h2 style="font-size:1.3rem; margin-bottom:8px; color:#ffffff;">Computer Vision & AR/VR</h2>
+                    <p style="color:#aaaaaa; font-size:0.95rem; line-height:1.5;">Developing gesture recognition, pose/posture monitoring, sign language interpretation, and immersive AR-VR solutions with OpenCV, MediaPipe, and hardware sensors.</p>
+                </div>
+
+                <div class="service" style="background:#1a1a1a; padding:25px; border-radius:12px; border:1px solid rgba(136,237,153,0.2);">
+                    <div class="service-icon" style="font-size:2rem; color:#88ed99; margin-bottom:12px;"><i class="fas fa-microchip"></i></div>
+                    <h2 style="font-size:1.3rem; margin-bottom:8px; color:#ffffff;">Edge & Digital Solutions (Hikat)</h2>
+                    <p style="color:#aaaaaa; font-size:0.95rem; line-height:1.5;">Building enterprise digital solutions for B2B, B2C, D2C, and B2G domains through the Hikat ecosystem (<a href="https://hikat.xyz" target="_blank" style="color:#88ed99;">hikat.xyz</a>).</p>
+                </div>
+
+                <div class="service" style="background:#1a1a1a; padding:25px; border-radius:12px; border:1px solid rgba(136,237,153,0.2);">
+                    <div class="service-icon" style="font-size:2rem; color:#88ed99; margin-bottom:12px;"><i class="fas fa-code"></i></div>
+                    <h2 style="font-size:1.3rem; margin-bottom:8px; color:#ffffff;">DSA & System Architecture</h2>
+                    <p style="color:#aaaaaa; font-size:0.95rem; line-height:1.5;">High-performance algorithmic optimization, clean object-oriented architecture, and robust problem solving backed by 300+ LeetCode problems solved in Java.</p>
+                </div>
+
+                <div class="service" style="background:#1a1a1a; padding:25px; border-radius:12px; border:1px solid rgba(136,237,153,0.2);">
+                    <div class="service-icon" style="font-size:2rem; color:#88ed99; margin-bottom:12px;"><i class="fas fa-vial"></i></div>
+                    <h2 style="font-size:1.3rem; margin-bottom:8px; color:#ffffff;">Software Testing & QA</h2>
+                    <p style="color:#aaaaaa; font-size:0.95rem; line-height:1.5;">Automated UI testing, end-to-end integration testing, test case development, and system reliability verification learned through QA internship experience.</p>
+                </div>
                 </div>
             </div>
         </div>
     </main>
-
 </body>
 </html>

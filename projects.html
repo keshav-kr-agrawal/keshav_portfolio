@@ -16,9 +16,44 @@
             transform: rotatey(360deg);
             transition: all 2s ease-in-out;
         }
+        .project-badge {
+            display: inline-block;
+            background: rgba(136, 237, 153, 0.15);
+            color: #88ed99;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+            border: 1px solid rgba(136, 237, 153, 0.3);
+        }
+        .tech-stack-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 15px;
+        }
+        .tech-pill {
+            background: #2b3035;
+            color: #d0d7de;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-family: monospace;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .project-highlight {
+            background: rgba(255, 255, 255, 0.03);
+            border-left: 3px solid #88ed99;
+            padding: 10px 14px;
+            margin: 12px 0;
+            font-size: 0.92rem;
+            color: #e0e6ed;
+            font-style: italic;
+        }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -44,75 +79,236 @@
                 <li><a href="achievements.html">Achievements</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="certifications.html">Certifications</a></li>
+                <li><a href="startups.html">Startups</a></li>
                 <li><a href="contact.html">Contact me</a></li>
             </ul>
-            
         </aside>
-        <div class="scrollable-container projects-container">
-            <h1 class="heading">Projects</h1>
-            
-            <div class="content-card">
-                <h3 class="content-title">Work Wise</h3>
-                <p class="content-description">
-                    A comprehensive project for the job finders, freelancers and recruiters. This can help them to get the right job and right employee and reduces the biasness in corporate field.
-                </p>
-                <ul class="feature-list">
-                    <li>Automatic job apply using AI, depending upon ones skills</li>
-                    <li>Reduce the biasness in corporate field</li>
-                    <li>Auto recommendation for upskilling them</li>
-                    
-                </ul>
-            </div>
 
-            <div class="content-card">
+        <div class="scrollable-container projects-container">
+            <div class="page-inner">
+                <h1 class="heading">Featured Work</h1>
+                <p class="page-subtitle">A collection of autonomous AI agents, accessibility technologies, mobility platforms, and full-stack software systems built for real-world impact.</p>
+                
+                <div class="content-card-grid">
+                    <!-- 1. SPARSH MUKTHI -->
+                    <div class="content-card">
+                <div class="card-placeholder-banner">
+                    <i class="fas fa-hands"></i>
+                    <span>Sparsh Mukthi • Accessibility AI Platform</span>
+                </div>
+                <span class="project-badge">Accessibility Technology • AI • Computer Vision • Full-Stack</span>
                 <h3 class="content-title">Sparsh Mukthi</h3>
                 <p class="content-description">
-                    A future technology that helps you use your system touchless, just by gestures and voice command.
+                    An award-winning accessibility platform designed to bridge communication gaps for physically impaired individuals, enabling seamless touchless computer interaction.
                 </p>
+                <div class="project-highlight">
+                    "Built a system that translates human gestures and sign language into digital commands, combining computer vision, sensors, VR, and adaptive intelligence to create accessible interaction."
+                </div>
                 <ul class="feature-list">
-                    <li>Hand gesture</li>
-                    <li>Adaptive AI</li>
-                    <li>Voice commands</li>
-                    <li>Customisable website/app under <a href="https://hikity.xyz"> Hikity </a></li>
+                    <li>Real-time hand tracking and gesture recognition</li>
+                    <li>Sign language to speech & digital command translation</li>
+                    <li>MPU6050 sensor integration & VR interaction capabilities</li>
+                    <li>Adaptive AI voice control and custom interface scaling via <a href="https://hikat.xyz" target="_blank" style="color:#88ed99;">Hikat</a></li>
                 </ul>
+                <div class="tech-stack-container">
+                    <span class="tech-pill">MediaPipe</span>
+                    <span class="tech-pill">OpenCV</span>
+                    <span class="tech-pill">Python</span>
+                    <span class="tech-pill">Firebase</span>
+                    <span class="tech-pill">VR Integration</span>
+                    <span class="tech-pill">MPU6050 Sensors</span>
+                    <span class="tech-pill">Adaptive AI</span>
+                </div>
             </div>
 
+            <!-- 2. HIKITY SALES AGENT -->
             <div class="content-card">
-                <h3 class="content-title">Bhaw-Chitran</h3>
+                <div class="card-placeholder-banner">
+                    <i class="fas fa-robot"></i>
+                    <span>Hikity Sales Agent • Autonomous Workflows</span>
+                </div>
+                <span class="project-badge">AI Agents • Automation • Sales Technology</span>
+                <h3 class="content-title">Hikity Sales Agent</h3>
                 <p class="content-description">
-                    An extension to CCTV, that detects persons mood.
+                    An autonomous AI sales agent engineered to automate lead generation, prospect qualification, context-aware conversations, and meeting scheduling.
                 </p>
+                <div class="project-highlight">
+                    "Engineered an autonomous AI sales agent that handles lead generation and sales workflows while maintaining brand voice and context-aware conversations."
+                </div>
                 <ul class="feature-list">
-                    <li>Ai powered mood detection</li>
-                    <li>Letting the psychologists know your contact from data base</li>
-                    <li>Privacy maintained</li>
+                    <li>Autonomous lead scraping, tracking, and outbound qualification</li>
+                    <li>Context-aware conversational intelligence maintaining authentic brand voice</li>
+                    <li>Real-time lead status dashboard and automated calendar scheduling</li>
+                    <li>Zero-investment automated lead generation architecture</li>
                 </ul>
+                <div class="tech-stack-container">
+                    <span class="tech-pill">Python</span>
+                    <span class="tech-pill">Anakin AI</span>
+                    <span class="tech-pill">Grok API</span>
+                    <span class="tech-pill">Supabase</span>
+                    <span class="tech-pill">Autonomous Logic</span>
+                    <span class="tech-pill">Real-time Tracking</span>
+                </div>
             </div>
 
+            <!-- 3. SUKRIT -->
             <div class="content-card">
-                <h3 class="content-title">Kissan Satrhi</h3>
+                <div class="card-placeholder-banner">
+                    <i class="fas fa-user-shield"></i>
+                    <span>Sukrit • Privacy-First Architecture</span>
+                </div>
+                <span class="project-badge">Mental Wellness • Privacy • Full-Stack</span>
+                <h3 class="content-title">Sukrit</h3>
                 <p class="content-description">
-                    An AI-powered agricultural assistance platform designed to empower farmers with smart farming solutions. The platform provides real-time insights, crop recommendations, and market analysis to enhance agricultural productivity.
+                    A privacy-first mental wellness platform built specifically for universities, institutes, and academic environments.
                 </p>
+                <div class="project-highlight">
+                    "Architected with a strict 'Privacy by Design' framework to guarantee complete student anonymity and data confidentiality."
+                </div>
                 <ul class="feature-list">
-                    <li>Smart farming solutions</li>
-                    <li>Real-time market analysis</li>
-                    <li>Multi-language support for rural accessibility</li>
-                    <li>Bagde and certification for farmers</li>
-                    <li>QR for each farmer to know thier crop quality</li>
+                    <li>Anonymous student-counselor peer conversation channels</li>
+                    <li>Automated 7-day chat deletion protocol for maximum privacy</li>
+                    <li>Comprehensive administrative dashboard for institutional insights</li>
+                    <li>Integrated attendance and marks management module</li>
                 </ul>
+                <div class="tech-stack-container">
+                    <span class="tech-pill">Python</span>
+                    <span class="tech-pill">MongoDB</span>
+                    <span class="tech-pill">Privacy-First Architecture</span>
+                    <span class="tech-pill">7-Day Auto Deletion</span>
+                    <span class="tech-pill">Admin Dashboard</span>
+                </div>
             </div>
 
+            <!-- 4. KISSAN SARTHI -->
             <div class="content-card">
+                <div class="card-placeholder-banner">
+                    <i class="fas fa-seedling"></i>
+                    <span>Kissan Sarthi • AgriTech AI</span>
+                </div>
+                <span class="project-badge">AgriTech • AI • Accessibility</span>
+                <h3 class="content-title">Kissan Sarthi</h3>
+                <p class="content-description">
+                    An AI-powered agricultural assistance platform providing farmers with real-time crop health monitoring, market pricing, and weather-based advisories.
+                </p>
+                <div class="project-highlight">
+                    "Designed to make advanced AI advisories accessible even to users with limited technical literacy through intuitive visual representations."
+                </div>
+                <ul class="feature-list">
+                    <li>Real-time crop disease diagnosis using computer vision and scraping</li>
+                    <li>Live weather advisory and dynamic market price tracking</li>
+                    <li>Pictorial UI and multilingual voice/text support for rural accessibility</li>
+                    <li>Farmer QR verification system and Aadhaar integration concept</li>
+                </ul>
+                <div class="tech-stack-container">
+                    <span class="tech-pill">Python</span>
+                    <span class="tech-pill">Weather API</span>
+                    <span class="tech-pill">Web Scraping</span>
+                    <span class="tech-pill">AI Crop Analysis</span>
+                    <span class="tech-pill">Multilingual UI</span>
+                    <span class="tech-pill">QR Verification</span>
+                </div>
+            </div>
+
+            <!-- 5. NAVI MEET (REAL PHOTO: navi.jpg) -->
+            <div class="content-card">
+                <img src="images/navi.jpg" alt="Navi Meet Google Maps Award Winner" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 15px;">
+                <span class="project-badge">Maps • Mobility • Travel Technology • Award Winner</span>
                 <h3 class="content-title">Navi Meet</h3>
                 <p class="content-description">
-                    An extension to google map.
+                    A smart navigation and group mobility platform that calculates optimal central meeting points and routes for group travel.
+                </p>
+                <div class="project-highlight">
+                    "Awarded Google Maps Platform Community Favorite Winner 2025 for innovation in group transit and spatial routing."
+                </div>
+                <ul class="feature-list">
+                    <li>Algorithmic common meeting point calculation for any number of participants</li>
+                    <li>Integrated public transport & private route optimization</li>
+                    <li>Live group location tracking with secure, shareable session links</li>
+                </ul>
+                <div class="tech-stack-container">
+                    <span class="tech-pill">JavaScript</span>
+                    <span class="tech-pill">Google Maps API</span>
+                    <span class="tech-pill">Directions API</span>
+                    <span class="tech-pill">Route Optimisation</span>
+                    <span class="tech-pill">Live Tracking</span>
+                </div>
+            </div>
+
+            <!-- 6. SPINEKARE -->
+            <div class="content-card">
+                <div class="card-placeholder-banner">
+                    <i class="fas fa-child"></i>
+                    <span>Spinekare • Posture & Ergonomics AI</span>
+                </div>
+                <span class="project-badge">Computer Vision • Health Technology • Real-Time Systems</span>
+                <h3 class="content-title">Spinekare</h3>
+                <p class="content-description">
+                    A computer-vision powered posture correction and ergonomics system engineered to prevent spinal strain in desk professionals.
+                </p>
+                <div class="project-highlight">
+                    "Real-time webcam pose analysis detecting spinal curvature deviations and issuing instant desktop notification alerts."
+                </div>
+                <ul class="feature-list">
+                    <li>Real-time spinal angle tracking via desktop camera stream</li>
+                    <li>Custom risk scoring algorithm measuring duration and posture deviation</li>
+                    <li>Gamified ergonomics feedback with Supabase telemetry logging</li>
+                </ul>
+                <div class="tech-stack-container">
+                    <span class="tech-pill">JavaScript</span>
+                    <span class="tech-pill">Supabase</span>
+                    <span class="tech-pill">Computer Vision</span>
+                    <span class="tech-pill">Posture Risk Algorithm</span>
+                    <span class="tech-pill">Desktop Alerts</span>
+                </div>
+            </div>
+
+            <!-- 7. WORK WISE -->
+            <div class="content-card">
+                <div class="card-placeholder-banner">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Work Wise • Career AI Matching</span>
+                </div>
+                <span class="project-badge">AI Job Automation • EdTech • Corporate Equity</span>
+                <h3 class="content-title">Work Wise</h3>
+                <p class="content-description">
+                    A comprehensive AI recruitment platform connecting job seekers, freelancers, and recruiters while reducing corporate hiring bias.
                 </p>
                 <ul class="feature-list">
-                    <li>Give you a common meeting point for any number of people</li>
-                    <li>Easy access to public transport</li>
-                    <li>Real time location tracking under <a href="https://hikity.xyz"> Hikity </a></li>
+                    <li>Skill-matched automated job applications powered by AI algorithms</li>
+                    <li>Bias-reduction framework prioritizing candidate skill metrics</li>
+                    <li>Personalized upskilling roadmaps and auto-recommendation engine</li>
                 </ul>
+                <div class="tech-stack-container">
+                    <span class="tech-pill">JavaScript</span>
+                    <span class="tech-pill">Node.js</span>
+                    <span class="tech-pill">AI Recommendation</span>
+                    <span class="tech-pill">Bias Reduction Logic</span>
+                </div>
+            </div>
+
+            <!-- 8. BHAW-CHITRAN -->
+            <div class="content-card">
+                <div class="card-placeholder-banner">
+                    <i class="fas fa-smile"></i>
+                    <span>Bhaw-Chitran • Affect Recognition</span>
+                </div>
+                <span class="project-badge">Computer Vision • Mental Health • Privacy AI</span>
+                <h3 class="content-title">Bhaw-Chitran</h3>
+                <p class="content-description">
+                    An intelligent CCTV extension that performs mood and affect recognition to support mental health awareness in institutional spaces.
+                </p>
+                <ul class="feature-list">
+                    <li>AI-powered emotion and distress signal detection</li>
+                    <li>Secure database lookup for professional psychological consultation assistance</li>
+                    <li>Strict local privacy preservation protocols</li>
+                </ul>
+                <div class="tech-stack-container">
+                    <span class="tech-pill">Python</span>
+                    <span class="tech-pill">OpenCV</span>
+                    <span class="tech-pill">Affect Analysis</span>
+                    <span class="tech-pill">Privacy Protocols</span>
+                </div>
             </div>
         </div>
     </main>

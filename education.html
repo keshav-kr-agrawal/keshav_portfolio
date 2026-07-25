@@ -14,6 +14,17 @@
             transform: rotatey(360deg);
             transition: all 2s ease-in-out;
         }
+        .edu-badge {
+            display: inline-block;
+            background: rgba(136, 237, 153, 0.15);
+            color: #88ed99;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-top: 10px;
+            border: 1px solid rgba(136, 237, 153, 0.3);
+        }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,56 +53,53 @@
                 <li><a href="achievements.html">Achievements</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="certifications.html">Certifications</a></li>
+                <li><a href="startups.html">Startups</a></li>
                 <li><a href="contact.html">Contact me</a></li>
             </ul>
-            
         </aside>
-        <div class="education-container scrollable-container">
-            <h1 class="heading">Education</h1>
 
-            <div class="education-card">
-                <img src="images/bit.jpg" alt="Bangalore Institute of Technology" class="education-image">
-                <div class="education-content">
-                    <i class="fas fa-graduation-cap education-icon"></i>
-                    <h3>Bachelor of Engineering</h3>
-                    <p class="education-subtitle">Bangalore Institute of Technology</p>
-                    <p class="education-description">
-                        Pursuing Computer Science Engineering with a focus on Artificial Intelligence and Machine Learning. 
-                        Current CGPA: 8.3/10
-                    </p>
-                    <p class="education-year">2024 - Present</p>
-                </div>
-            </div>
+        <div class="scrollable-container education-container">
+            <div class="page-inner">
+                <h1 class="heading">Education & Academic Background</h1>
+                <p class="page-subtitle">Formal computer science & engineering degree coursework, academic milestones, and foundational schooling.</p>
+                
+                <div class="content-card-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(480px, 1fr)); gap: 28px;">
+                    <div class="content-card">
+                        <img src="images/bit.jpg" alt="Bangalore Institute of Technology" style="width: 100%; height: 220px; object-fit: cover; border-radius: 10px; margin-bottom: 15px;">
+                        <h3 class="content-title"><i class="fas fa-university" style="color: #88ed99;"></i> Bangalore Institute of Technology (BIT)</h3>
+                        <p class="content-description" style="font-size: 1.05rem; color: #ffffff; font-weight: 500;">
+                            Bachelor of Engineering (B.E.) in Computer Science & Engineering
+                        </p>
+                        <p style="color: #88ed99; margin-top: 5px; font-size: 0.9rem;">
+                            <i class="fas fa-calendar-alt"></i> 2024 – 2028 (Expected Graduation: 2028) &nbsp;|&nbsp; <i class="fas fa-map-marker-alt"></i> Bengaluru, India
+                        </p>
+                        <ul class="feature-list" style="margin-top: 15px;">
+                            <li>Focus Areas: Data Structures & Algorithms, Artificial Intelligence, Computer Vision, Software Engineering, Database Systems</li>
+                            <li>Active Leader & Winner in National/International Hackathons and Project Exhibitions</li>
+                            <li>Ideation Lead at CSE Department Competitions</li>
+                        </ul>
+                        <span class="edu-badge" style="margin-top: 15px; display: inline-block;"><i class="fas fa-graduation-cap"></i> Current CGPA: 8.0 / 10</span>
+                    </div>
 
-            <div class="education-card">
-                <img src="images/skp.jpg" alt="Sri Chaitanya Techno School" class="education-image">
-                <div class="education-content">
-                    <i class="fas fa-school education-icon"></i>
-                    <h3>Pre-University Education</h3>
-                    <p class="education-subtitle">SKP Vidya Vihar</p>
-                    <p class="education-description">
-                        Completed PUC with distinction in Science stream. 
-                        Secured 84% in PCM (Physics, Chemistry, Mathematics)
-                    </p>
-                    <p class="education-year">2022 - 2024</p>
+                    <div class="content-card">
+                        <img src="images/skp.jpg" alt="SKP Vidya Vihar Bhagalpur" style="width: 100%; height: 220px; object-fit: cover; border-radius: 10px; margin-bottom: 15px;">
+                        <h3 class="content-title"><i class="fas fa-school" style="color: #88ed99;"></i> SKP Vidya Vihar, Bhagalpur</h3>
+                        <p class="content-description" style="font-size: 1.05rem; color: #ffffff; font-weight: 500;">
+                            Higher Secondary Schooling (Class XII, CBSE)
+                        </p>
+                        <p style="color: #88ed99; margin-top: 5px; font-size: 0.9rem;">
+                            <i class="fas fa-calendar-alt"></i> 2022 – 2024 &nbsp;|&nbsp; <i class="fas fa-map-marker-alt"></i> Bhagalpur, Bihar, India
+                        </p>
+                        <ul class="feature-list" style="margin-top: 15px;">
+                            <li>Stream: Science (Physics, Chemistry, Mathematics, Computer Science)</li>
+                            <li>Strong foundation in analytical problem solving, logic, and mathematics</li>
+                        </ul>
+                        <span class="edu-badge" style="margin-top: 15px; display: inline-block;"><i class="fas fa-award"></i> Score: 84.0%</span>
+                    </div>
                 </div>
-            </div>
 
-            <div class="education-card">
-                <img src="images/sjs.jpg" alt="Sri Chaitanya Techno School" class="education-image">
-                <div class="education-content">
-                    <i class="fas fa-book education-icon"></i>
-                    <h3>Schooling (LKG-X)</h3>
-                    <p class="education-subtitle">St. Joseph's School</p>
-                    <p class="education-description">
-                        Completed 10th standard with distinction. 
-                        Achieved 92% in board examinations
-                    </p>
-                    <p class="education-year">2010 - 2022</p>
-                </div>
             </div>
         </div>
     </main>
-
 </body>
-</html> 
+</html>

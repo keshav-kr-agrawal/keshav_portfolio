@@ -9,14 +9,31 @@
     <script defer src="main.js"></script>
     <script defer src="loader.js"></script>
     <title>Achievements | Keshav Kumar Agrawal</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <style>
         .sidebar-logo:hover {
             transform: rotatey(360deg);
             transition: all 2s ease-in-out;
         }
+        .achievement-tag {
+            display: inline-block;
+            background: rgba(136, 237, 153, 0.15);
+            color: #88ed99;
+            padding: 3px 10px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-top: 6px;
+            border: 1px solid rgba(136, 237, 153, 0.3);
+        }
+        .achievements-grid-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
     </style>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -42,159 +59,248 @@
                 <li><a href="achievements.html">Achievements</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="certifications.html">Certifications</a></li>
+                <li><a href="startups.html">Startups</a></li>
                 <li><a href="contact.html">Contact me</a></li>
             </ul>
-            
         </aside>
+
         <div class="scrollable-container achievements-container">
-            <h1 class="heading">Achievements</h1>
-            
-            <div class="achievements-content">
+            <div class="page-inner">
+                <h1 class="heading">Built. Competed. Won.</h1>
+                <p class="page-subtitle">A record of building real technology under extreme constraints, competing internationally, and delivering winning systems.</p>
+                
+                <div class="achievements-content">
+                
+                <!-- Infinity Code Hackathon (Placeholder) -->
                 <div class="achievement-card">
-                    <img src="images/navi.jpg" alt="Google Maps" class="achievement-image">
+                    <div class="card-placeholder-banner">
+                        <i class="fas fa-trophy"></i>
+                        <span>Infinity Code • International Winner</span>
+                    </div>
                     <div class="achievement-content">
-                        <i class="fas fa-trophy achievement-icon"></i>
-                        <h3>Google Maps Platform Awards</h3>
-                        <p class="achievement-subtitle">Community's Favourite Winner</p>
-                        <p class="achievement-location"><i class="fas fa-map-marker-alt"></i> Google Maps</p>
+                        <h3>🏆 Infinity Code Hackathon</h3>
+                        <p class="achievement-subtitle">1st Place Winner - International</p>
+                        <p class="achievement-location"><i class="fas fa-globe"></i> International Competition</p>
                         <p class="achievement-description">
-                            Got awarded as Community's Favourite in Google Maps Platform Awards 2025, for the project "Navi Meet".
+                            Secured 1st Place globally in the Infinity Code Hackathon, developing an intelligent AI system under competition constraints.
+                        </p>
+                        <span class="achievement-tag"><i class="fas fa-award"></i> Awarded $25,000 Google Cloud Credits</span>
+                    </div>
+                </div>
+
+                <!-- Fidelity Hackathon (Placeholder) -->
+                <div class="achievement-card">
+                    <div class="card-placeholder-banner">
+                        <i class="fas fa-coins"></i>
+                        <span>Fidelity 2026 • 1st Rank Winner</span>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>🏆 Fidelity Hackathon 2026</h3>
+                        <p class="achievement-subtitle">1st Place Winner</p>
+                        <p class="achievement-location"><i class="fas fa-map-marker-alt"></i> Bengaluru, India</p>
+                        <p class="achievement-description">
+                            Clinched 1st rank in Fidelity Hackathon 2026 for building scalable, high-performance financial & AI software solutions.
+                        </p>
+                        <span class="achievement-tag"><i class="fas fa-coins"></i> Awarded ₹150,000 Cash Prize</span>
+                    </div>
+                </div>
+
+                <!-- Aventus 3.0 (REAL PHOTO: aven.jpg) -->
+                <div class="achievement-card">
+                    <img src="images/aven.jpg" alt="Aventus 3.0 Winner" class="achievement-image">
+                    <div class="achievement-content">
+                        <h3>🏆 Hack-Aventus 3.0 (24hr Hackathon)</h3>
+                        <p class="achievement-subtitle">1st Place Winner</p>
+                        <p class="achievement-location"><i class="fas fa-map-marker-alt"></i> Dayananda Sagar University, Bengaluru</p>
+                        <p class="achievement-description">
+                            Secured overall first place in the 24-hour Aventus tech hackathon, demonstrating high-speed prototype execution and real-world system architecture.
+                        </p>
+                        <span class="achievement-tag"><i class="fas fa-coins"></i> Awarded ₹100,000 Cash Prize</span>
+                    </div>
+                </div>
+
+                <!-- Google Maps Award (REAL PHOTO: navi.jpg) -->
+                <div class="achievement-card">
+                    <img src="images/navi.jpg" alt="Google Maps Platform Award" class="achievement-image">
+                    <div class="achievement-content">
+                        <h3>🗺️ Google Maps Platform Awards 2025</h3>
+                        <p class="achievement-subtitle">Community Favorite Winner - International</p>
+                        <p class="achievement-location"><i class="fas fa-globe"></i> International Award</p>
+                        <p class="achievement-description">
+                            Awarded Community's Favourite in Google Maps Platform Awards 2025 for the group mobility innovation "Navi Meet".
                         </p>
                     </div>
                 </div>
 
-                <!-- <div class="achievement-card">
-                    <img src="images/navi.jpg" alt="Google Maps" class="achievement-image">
+                <!-- Frostbyte Hackathon (Placeholder) -->
+                <div class="achievement-card">
+                    <div class="card-placeholder-banner">
+                        <i class="fas fa-snowflake"></i>
+                        <span>Frostbyte • International Winner</span>
+                    </div>
                     <div class="achievement-content">
-                        <i class="fas fa-trophy achievement-icon"></i>
-                        <h3>Google Maps Platform Awards</h3>
-                        <p class="achievement-subtitle">Community's Favourite Winner</p>
-                        <p class="achievement-location"><i class="fas fa-map-marker-alt"></i> Google Maps</p>
+                        <h3>🏆 Frostbyte Hackathon</h3>
+                        <p class="achievement-subtitle">1st Place Winner - International</p>
+                        <p class="achievement-location"><i class="fas fa-globe"></i> International Competition</p>
                         <p class="achievement-description">
-                            Got awarded as Community's Favourite in Google Maps Platform Awards 2025, for the project "Navi Meet".
+                            Won 1st Place in Frostbyte Hackathon, recognized for technical innovation and AI system capability.
                         </p>
                     </div>
                 </div>
 
+                <!-- Microsoft M365 (Placeholder) -->
                 <div class="achievement-card">
-                    <img src="images/navi.jpg" alt="Google Maps" class="achievement-image">
+                    <div class="card-placeholder-banner">
+                        <i class="fab fa-microsoft"></i>
+                        <span>Microsoft M365 • Winner</span>
+                    </div>
                     <div class="achievement-content">
-                        <i class="fas fa-trophy achievement-icon"></i>
-                        <h3>Google Maps Platform Awards</h3>
-                        <p class="achievement-subtitle">Community's Favourite Winner</p>
-                        <p class="achievement-location"><i class="fas fa-map-marker-alt"></i> Google Maps</p>
+                        <h3>🏆 Microsoft M365 Hackathon 2025</h3>
+                        <p class="achievement-subtitle">1st Place Winner</p>
+                        <p class="achievement-location"><i class="fas fa-laptop-code"></i> Microsoft Innovation Track</p>
                         <p class="achievement-description">
-                            Got awarded as Community's Favourite in Google Maps Platform Awards 2025, for the project "Navi Meet".
+                            Won first prize in Microsoft M365 technology challenge for building productivity AI integrations.
+                        </p>
+                        <span class="achievement-tag"><i class="fas fa-gift"></i> Awarded Lenovo Tab</span>
+                    </div>
+                </div>
+
+                <!-- Inceptra Exhibition (REAL PHOTO: incep.jpg) -->
+                <div class="achievement-card">
+                    <img src="images/incep.jpg" alt="Inceptra Exhibition Winner" class="achievement-image">
+                    <div class="achievement-content">
+                        <h3>🏅 Inceptra National Level Project Exhibition</h3>
+                        <p class="achievement-subtitle">1st Place Champion - AI & Innovation Track</p>
+                        <p class="achievement-location"><i class="fas fa-map-marker-alt"></i> BIT, Bengaluru</p>
+                        <p class="achievement-description">
+                            Recognized as overall champion in AI & Innovation at the National Level Project Exhibition.
                         </p>
                     </div>
                 </div>
 
+                <!-- Codeveda AR/VR & IoT Exhibition (REAL PHOTO: iot_win.jpg) -->
                 <div class="achievement-card">
-                    <img src="images/navi.jpg" alt="Google Maps" class="achievement-image">
+                    <img src="images/iot_win.jpg" alt="Codeveda IoT Winner" class="achievement-image">
                     <div class="achievement-content">
-                        <i class="fas fa-trophy achievement-icon"></i>
-                        <h3>Google Maps Platform Awards</h3>
-                        <p class="achievement-subtitle">Community's Favourite Winner</p>
-                        <p class="achievement-location"><i class="fas fa-map-marker-alt"></i> Google Maps</p>
+                        <h3>🏆 Codeveda AR/VR & IoT Project Exhibition</h3>
+                        <p class="achievement-subtitle">1st Place Winner</p>
+                        <p class="achievement-location"><i class="fas fa-map-marker-alt"></i> BIT, Bengaluru</p>
                         <p class="achievement-description">
-                            Got awarded as Community's Favourite in Google Maps Platform Awards 2025, for the project "Navi Meet".
+                            Secured 1st Place across AR/VR and IoT innovation tracks for hardware-software integrated prototypes.
                         </p>
                     </div>
                 </div>
 
+                <!-- AETHRA Global Ideathon (Placeholder) -->
                 <div class="achievement-card">
-                    <img src="images/navi.jpg" alt="Google Maps" class="achievement-image">
-                    <div class="achievement-content">
-                        <i class="fas fa-trophy achievement-icon"></i>
-                        <h3>Google Maps Platform Awards</h3>
-                        <p class="achievement-subtitle">Community's Favourite Winner</p>
-                        <p class="achievement-location"><i class="fas fa-map-marker-alt"></i> Google Maps</p>
-                        <p class="achievement-description">
-                            Got awarded as Community's Favourite in Google Maps Platform Awards 2025, for the project "Navi Meet".
-                        </p>
+                    <div class="card-placeholder-banner">
+                        <i class="fas fa-lightbulb"></i>
+                        <span>AETHRA Global • 2nd Place</span>
                     </div>
-                </div> -->
-
-                <div class="achievement-card">
-                    <img src="images/aven.jpg" alt="Aventus 3.0" class="achievement-image">
                     <div class="achievement-content">
-                        <i class="fas fa-trophy achievement-icon"></i>
-                        <h3>🏆 Aventus 3.0 (24hr Hackathon)</h3>
-                        <p class="achievement-subtitle">Tech Hackathon Winner</p>
-                        <p class="achievement-location"><i class="fas fa-map-marker-alt"></i> Dayananda Sagar University, Bangalore</p>
+                        <h3>🥈 AETHRA Global Ideathon</h3>
+                        <p class="achievement-subtitle">2nd Place - International</p>
+                        <p class="achievement-location"><i class="fas fa-globe"></i> International Competition</p>
                         <p class="achievement-description">
-                            Secured first place in the prestigious Aventus 3.0 tech hackathon, showcasing innovative solutions in AI and technology. Demonstrated exceptional problem-solving skills and technical expertise in developing cutting-edge solutions.
+                            Awarded 2nd Place globally for novel product design and technology strategy in AETHRA Global Ideathon.
                         </p>
                     </div>
                 </div>
 
+                <!-- Yukesong 2025 (Placeholder) -->
                 <div class="achievement-card">
-                    <img src="images/incep.jpg" alt="National Level Project Exhibition" class="achievement-image">
+                    <div class="card-placeholder-banner">
+                        <i class="fas fa-medal"></i>
+                        <span>Yukesong 2025 • 2nd Place</span>
+                    </div>
                     <div class="achievement-content">
-                        <i class="fas fa-medal achievement-icon"></i>
-                        <h3>🏅 Inceptra (National Level Project Exhibition)</h3>
-                        <p class="achievement-subtitle">Exhibition winner</p>
-                        <p class="achievement-location"><i class="fas fa-map-marker-alt"></i> Bangalore Institute of Technology, Bangalore</p>
+                        <h3>🥈 Yukesong 2025 International Competition</h3>
+                        <p class="achievement-subtitle">2nd Place - International</p>
+                        <p class="achievement-location"><i class="fas fa-globe"></i> International Competition</p>
                         <p class="achievement-description">
-                            Recognized as the champion in the AI & Innovation track at the National Level Project Exhibition.
+                            Earned 2nd Place in the Yukesong 2025 global technology competition.
                         </p>
                     </div>
                 </div>
 
+                <!-- PeerBridge Mental Hacks (Placeholder) -->
                 <div class="achievement-card">
-                    <img src="images/bookp.jpg" alt="IDEAVERSE" class="achievement-image">
+                    <div class="card-placeholder-banner">
+                        <i class="fas fa-heartbeat"></i>
+                        <span>PeerBridge • Health Winner</span>
+                    </div>
                     <div class="achievement-content">
-                        <i class="fas fa-trophy achievement-icon"></i>
-                        <h3>🏆 Book review competition</h3>
-                        <p class="achievement-subtitle">Runner Up</p>
-                        <p class="achievement-location"><i class="fas fa-map-marker-alt"></i> Bangalore Institute of Technology, Bangalore</p>
+                        <h3>🏆 PeerBridge Mental Hacks</h3>
+                        <p class="achievement-subtitle">1st Place Winner</p>
+                        <p class="achievement-location"><i class="fas fa-heartbeat"></i> Health & Wellness Hack</p>
                         <p class="achievement-description">
-                            Won 2nd prize in book review competition,on the ocassion of National Book Reading Day
+                            Won 1st prize for building privacy-focused mental health and peer assistance solutions.
                         </p>
                     </div>
                 </div>
 
+                <!-- Ideaverse Ideathon (REAL PHOTO: idea.jpg) -->
                 <div class="achievement-card">
-                    <img src="images/iot_win.jpg" alt="National Level Project Exhibition" class="achievement-image">
+                    <img src="images/idea.jpg" alt="Ideaverse Finalist" class="achievement-image">
                     <div class="achievement-content">
-                        <i class="fas fa-medal achievement-icon"></i>
-                        <h3>🏅 IOT Project Exhibition</h3>
-                        <p class="achievement-subtitle">Innovation Track Champion</p>
-                        <p class="achievement-location"><i class="fas fa-map-marker-alt"></i> Bangalore Institute of Technology, Bangalore</p>
+                        <h3>🏆 Ideaverse Ideathon</h3>
+                        <p class="achievement-subtitle">1st Place Winner</p>
+                        <p class="achievement-location"><i class="fas fa-map-marker-alt"></i> CSE Dept, BIT Bengaluru</p>
                         <p class="achievement-description">
-                            Recognized as the champion in the Innovation track at the IOT Project Exhibition.
+                            Secured 1st Place in Ideaverse Ideathon organized by the Computer Science Department.
                         </p>
                     </div>
                 </div>
 
+                <!-- Code Breakers Challenge (REAL PHOTO: cbc.jpg) -->
                 <div class="achievement-card">
-                    <img src="images/idea.jpg" alt="IDEAVERSE" class="achievement-image">
+                    <img src="images/cbc.jpg" alt="Code Breakers Winner" class="achievement-image">
                     <div class="achievement-content">
-                        <i class="fas fa-trophy achievement-icon"></i>
-                        <h3>🏆 IDEAVERSE (Ideathon)</h3>
-                        <p class="achievement-subtitle">Among the top finalists</p>
-                        <p class="achievement-location"><i class="fas fa-map-marker-alt"></i> Bangalore Institute of Technology, Bangalore</p>
+                        <h3>🏆 Code Breakers Challenge (24hr Hackathon)</h3>
+                        <p class="achievement-subtitle">1st in Agriculture Track & Top Finalist</p>
+                        <p class="achievement-location"><i class="fas fa-map-marker-alt"></i> Global Academy of Technology</p>
                         <p class="achievement-description">
-                            Among the top finalists in IDEAVERSE, a prestigious competition organized by the CSE department at Bangalore Institute of Technology.
+                            Finished 1st in the Agriculture Innovation track and selected as overall top finalist.
                         </p>
                     </div>
                 </div>
 
+                <!-- Smart India Hackathon (SIH) 2025 (Placeholder) -->
                 <div class="achievement-card">
-                    <img src="images/cbc.jpg" alt="IDEAVERSE" class="achievement-image">
+                    <div class="card-placeholder-banner">
+                        <i class="fas fa-flag"></i>
+                        <span>Smart India Hackathon 2025</span>
+                    </div>
                     <div class="achievement-content">
-                        <i class="fas fa-trophy achievement-icon"></i>
-                        <h3>🏆 CODE BREAKERS CHALLENGE (24hr Hackathon)</h3>
-                        <p class="achievement-subtitle">Among the top finalists</p>
-                        <p class="achievement-location"><i class="fas fa-map-marker-alt"></i> Global Academy of Technology, Bangalore</p>
+                        <h3>🇮🇳 Smart India Hackathon (SIH) 2025</h3>
+                        <p class="achievement-subtitle">Selected Finalist</p>
+                        <p class="achievement-location"><i class="fas fa-flag"></i> Government of India Initiative</p>
                         <p class="achievement-description">
-                            Were in the top finalists and secured 1st in our track(agriculture)
+                            Selected as Finalist in Smart India Hackathon (SIH) 2025 for building national-scale public sector technology solutions.
                         </p>
                     </div>
                 </div>
+
+                <!-- Additional Podiums (REAL PHOTO: codemaze.jpg) -->
+                <div class="achievement-card">
+                    <img src="images/codemaze.jpg" alt="Coding Competitions" class="achievement-image">
+                    <div class="achievement-content">
+                        <h3>⚡ Additional Competitive Accomplishments</h3>
+                        <p class="achievement-subtitle">Podiums & Finalist Placements</p>
+                        <p class="achievement-location"><i class="fas fa-code"></i> National & Global Arenas</p>
+                        <p class="achievement-description">
+                            • <strong>Pragyan Ideathon:</strong> 3rd Place<br>
+                            • <strong>HackVortex Codestorm 5:</strong> 2nd Place<br>
+                            • <strong>Omnitrix 24hr Hackathon:</strong> 2nd Place<br>
+                            • <strong>National Book Review (BIT):</strong> 2nd Place<br>
+                            • <strong>Finalist:</strong> Asterhacks, Build Halloween Hacks, Nikshatra 24hr Hackathon
+                        </p>
+                    </div>
+                </div>
+
             </div>
         </div>
-    </main>
-
+    </div>
+</main>
 </body>
 </html>

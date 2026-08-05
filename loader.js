@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (!isHomePage) {
         loaderOverlay.style.display = 'none';
         loaderOverlay.style.visibility = 'hidden';
+        document.body.style.overflow = '';
         return;
     }
     
@@ -34,13 +35,13 @@ document.addEventListener('DOMContentLoaded', function() {
         setTimeout(() => {
             loaderOverlay.style.display = 'none';
             loaderOverlay.style.visibility = 'hidden';
-            document.body.style.overflow = 'auto';
+            document.body.style.overflow = '';
         }, 4000); // Match this with your animation duration
     } else {
         // Hide loader if navigating between pages
         loaderOverlay.style.display = 'none';
         loaderOverlay.style.visibility = 'hidden';
-        document.body.style.overflow = 'auto';
+        document.body.style.overflow = '';
     }
 
     const progressCircle = document.querySelector('.progress-ring-circle');

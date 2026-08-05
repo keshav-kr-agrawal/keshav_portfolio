@@ -30,7 +30,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // --- Swiper Initialization for Desktop ---
-    if (window.innerWidth > 768 && document.querySelector('.mySwiper')) {
+    const swiperSlides = document.querySelectorAll('.mySwiper .swiper-slide');
+    if (window.innerWidth > 1024 && swiperSlides.length > 1) {
         new Swiper(".mySwiper", {
             direction: "vertical",
             mousewheel: true,

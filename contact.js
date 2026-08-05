@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 subject: subject,
                 message: message,
                 to_name: "Keshav Kumar Agrawal",
-                to_email: "keshavagrawal2004@gmail.com"
+                to_email: "keshav@hikat.xyz"
             })
             .then(() => {
                 Swal.fire({

@@ -1,0 +1,31 @@
+# robots.txt for https://keshav-portfolio-vert.vercel.app/
+
+User-agent: *
+Allow: /
+
+# Explicitly allow major AI crawlers & search bots
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+Sitemap: https://keshav-portfolio-vert.vercel.app/sitemap.xml
